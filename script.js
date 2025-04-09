@@ -1,6 +1,6 @@
-// Particles.js Configuration
+// particles.js configuration
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize particles.js
+    // initialize particles.js
     particlesJS('particles-js', {
         "particles": {
             "number": {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Mobile Menu Toggle
+// mobile menu toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking on a nav link
+    // close mobile menu when clicking on a nav link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Experience Tabs
+// experience tabs
 document.addEventListener('DOMContentLoaded', function() {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const experienceItems = document.querySelectorAll('.experience-item');
@@ -136,20 +136,20 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', () => {
             const id = btn.dataset.id;
             
-            // Remove active class from all buttons and items
+            // remove active class from all buttons and items
             tabBtns.forEach(btn => btn.classList.remove('active'));
             experienceItems.forEach(item => item.classList.remove('active'));
             
-            // Add active class to clicked button and corresponding item
+            // add active class to clicked button and corresponding item
             btn.classList.add('active');
             document.getElementById(id).classList.add('active');
         });
     });
 });
 
-// Scroll Animation
+// scroll animation
 document.addEventListener('DOMContentLoaded', function() {
-    // Add fade-in animation to sections when scrolled into view
+    // add fade-in animation to sections when scrolled into view
     const sections = document.querySelectorAll('section');
     
     const fadeInOptions = {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Form Submission (Placeholder - would need backend integration for actual functionality)
+// form submission (placeholder for now)
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form form');
     
@@ -182,33 +182,32 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
+            // get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
             
-            // Display confirmation message (in a real implementation, this would send data to a server)
-            alert(`Thank you for your message, ${name}! This is a demo form and doesn't actually send emails.`);
+            // display confirmation message (in a real implementation, this would send data to a server)
+            alert(`Thank you for your message, ${name}! This is only for showcase purposes doesn't actually send emails.`);
             
-            // Reset form
             contactForm.reset();
         });
     }
 });
 
-// Typewriter effect for hero section
+// typewriter effect for hero section
 document.addEventListener('DOMContentLoaded', function() {
     const nameElement = document.querySelector('.name');
     const titleElement = document.querySelector('.title');
     
-    // Add CSS classes for animation
+    // add CSS classes for animation
     nameElement.classList.add('typewriter');
     setTimeout(() => {
         titleElement.classList.add('typewriter');
-    }, 1000);
+    }, 300);
 });
 
-// Add smooth scrolling for anchor links
+// add smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -218,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                // Offset for fixed navbar
+                // offset for fixed navbar
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
                 
@@ -231,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add CSS class to navbar on scroll
+// add CSS class to navbar on scroll
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     
@@ -244,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add additional CSS for animations
+// add additional CSS for animations again
 document.addEventListener('DOMContentLoaded', function() {
     const style = document.createElement('style');
     style.textContent = `

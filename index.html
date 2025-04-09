@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        .fade-in {
+        /* .fade-in {
             opacity: 0;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -42,17 +42,17 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="greeting fade-in">Hello! My name is</div>
-            <h1 class="name fade-in delay-1">Amro Abedmoosa</h1>
-            <h2 class="title fade-in delay-2">Computer Engineering</h2>
-            <p class="hero-description fade-in delay-3">
-                I'm a Computer Engineering student at the University of Guelph with experience in web development, Quality Assurance, and AI training.
+            <div class="greeting">Hello! My name is</div>
+            <h1 class="name">Amro Abedmoosa</h1>
+            <h2 class="title">Computer Engineering</h2>
+            <p class="hero-description">
+                I'm a Computer Engineering student at the University of Guelph with experience in Web Development, Quality Assurance, and AI training.
             </p>
-            <div class="hero-buttons fade-in delay-4">
+            <div class="hero-buttons">
                 <a href="#contact" class="btn primary-btn">Contact Me</a>
                 <a href="#projects" class="btn secondary-btn">View Projects</a>
             </div>
-            <div class="social-links fade-in delay-5">
+            <div class="social-links">
                 <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/amro212" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="mailto:aabedmoo@uoguelph.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -246,6 +246,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="folder-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Amro212/Wordle-Wizard" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Wordle Wizard</h3>
+                        <p class="project-description">A web application designed to assist players in solving the popular The New York Times puzzle game, Wordle. Built using Flask for the backend and JavaScript for the frontend.</p>
+                        <ul class="project-bullets">
+                            <li><strong>Gameplay:</strong> Users can enter feedback in a simple format to receive smart word suggestions!</li>
+                            <li><strong>Information Gain:</strong> Uses entropy calculations to assess guess effectiveness and narrow down solutions.</li>
+                            <li><strong>Pattern Matching:</strong> Analyzes feedback patterns to filter out invalid guesses, refining the list of possible answers based on user input.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span style="margin-right: 20px">Full-Stack Development</span>
+                            <span style="margin-right: 20px">Flask</span>
+                            <span style="margin-right: 20px">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -317,6 +341,14 @@
                         <div class="skill-item">
                             <i class="fas fa-robot"></i>
                             <span>Transformers</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-folder"></i>
+                            <span>Collections</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-python"></i>
+                            <span>Flask</span>
                         </div>
                     </div>
                 </div>

@@ -227,14 +227,16 @@ section {
 }
 
 .name {
+    margin-top: 20px;
     font-size: 72px;
     font-weight: 700;
     color: var(--lightest-slate);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 1.1;
 }
 
 .title {
+    margin-top: 30px;
     font-size: 60px;
     font-weight: 600;
     color: var(--light-slate);
@@ -456,7 +458,7 @@ section {
 
 .project-card {
     background-color: var(--light-navy);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px;
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
     transition: var(--transition);
@@ -516,6 +518,26 @@ section {
     font-size: 12px;
     color: var(--teal);
 }
+
+.project-bullets {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.project-bullets li {
+    margin-bottom: 10px;
+}
+
+.project-bullets li::marker {
+    color: var(--teal);
+    font-size: 1.2em;
+}
+
+.project-tech {
+    margin-top: 20px;
+}
+
 
 /* Skills Section */
 .skills-container {
@@ -880,7 +902,7 @@ section {
     }
 }
 
-/* Add these classes for different animation delays */
+/* Classes for different animation delays */
 .fade-in {
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
